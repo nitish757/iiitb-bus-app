@@ -1,5 +1,3 @@
-// This file contains the bus schedule data, automatically extracted from the PDF.
-// It is loaded by the main web application.
 const scheduleData = {
     "uniworldToIiitb": [
         {
@@ -10,8 +8,8 @@ const scheduleData = {
                 "B1",
                 "B1",
                 "B1",
-                "B1",
-                "B1"
+                null,
+                null
             ]
         },
         {
@@ -22,8 +20,8 @@ const scheduleData = {
                 "B2",
                 "B2",
                 "B2",
-                "B2",
-                "B2"
+                null,
+                null
             ]
         },
         {
@@ -34,8 +32,20 @@ const scheduleData = {
                 "B1",
                 "B1",
                 "B1",
-                "B1",
-                "B1"
+                null,
+                null
+            ]
+        },
+        {
+            "time": "8:00 AM",
+            "days": [
+                "B4",
+                "B4",
+                "B4",
+                "B3",
+                "B4",
+                null,
+                null
             ]
         },
         {
@@ -46,8 +56,8 @@ const scheduleData = {
                 "B3",
                 "B3",
                 "B3",
-                "B3",
-                "B3"
+                null,
+                null
             ]
         },
         {
@@ -57,9 +67,9 @@ const scheduleData = {
                 "B2",
                 "B2",
                 "B2",
-                "B2",
-                "B2",
-                "B2"
+                "B4",
+                null,
+                null
             ]
         },
         {
@@ -70,8 +80,8 @@ const scheduleData = {
                 "B1",
                 "B1",
                 "B1",
-                "B1",
-                "B1"
+                null,
+                null
             ]
         },
         {
@@ -82,20 +92,20 @@ const scheduleData = {
                 "B3",
                 "B3",
                 "B3",
-                "B3",
-                "B3"
+                null,
+                null
             ]
         },
         {
             "time": "9:30 AM",
             "days": [
-                "B4",
                 "B4",
                 "B4",
                 "B4",
                 "No Bus",
                 "B4",
-                "B4"
+                null,
+                null
             ]
         },
         {
@@ -104,10 +114,10 @@ const scheduleData = {
                 "B1",
                 "B1",
                 "B1",
-                "B1",
                 "No Bus",
-                "B1",
-                "B1"
+                "B4",
+                null,
+                null
             ]
         },
         {
@@ -118,8 +128,8 @@ const scheduleData = {
                 "B2",
                 "B2",
                 "B2",
-                "B2",
-                "B2"
+                null,
+                null
             ]
         },
         {
@@ -128,20 +138,8 @@ const scheduleData = {
                 "B1",
                 "B1",
                 "B1",
-                "B1",
                 "No Bus",
                 "B1",
-                "B1"
-            ]
-        },
-        {
-            "time": "11:30 AM",
-            "days": [
-                null,
-                null,
-                null,
-                null,
-                null,
                 null,
                 null
             ]
@@ -152,10 +150,10 @@ const scheduleData = {
                 "B3",
                 "B3",
                 "B3",
-                "B3",
                 "B1",
                 "B3",
-                "B3"
+                null,
+                null
             ]
         },
         {
@@ -164,10 +162,10 @@ const scheduleData = {
                 "B2",
                 "B2",
                 "B2",
-                "B2",
                 "No Bus",
                 "B2",
-                "B2"
+                null,
+                null
             ]
         },
         {
@@ -177,9 +175,9 @@ const scheduleData = {
                 "B3",
                 "B3",
                 "B3",
-                "B3",
-                "B3",
-                "B3"
+                "B4",
+                null,
+                null
             ]
         },
         {
@@ -188,10 +186,10 @@ const scheduleData = {
                 "B1",
                 "B1",
                 "B1",
-                "B1",
                 "B2",
                 "B1",
-                "B1"
+                null,
+                null
             ]
         },
         {
@@ -200,10 +198,10 @@ const scheduleData = {
                 "B2",
                 "B2",
                 "B2",
-                "B2",
                 null,
                 "B2",
-                "B2"
+                null,
+                null
             ]
         },
         {
@@ -214,8 +212,8 @@ const scheduleData = {
                 "B3",
                 "B3",
                 "B3",
-                "B3",
-                "B3"
+                null,
+                null
             ]
         },
         {
@@ -226,8 +224,8 @@ const scheduleData = {
                 "B1",
                 "B1",
                 "B1",
-                "B1",
-                "B1"
+                null,
+                null
             ]
         },
         {
@@ -238,8 +236,8 @@ const scheduleData = {
                 "B2",
                 "B2",
                 "B2",
-                "B2",
-                "B2"
+                null,
+                null
             ]
         },
         {
@@ -248,8 +246,8 @@ const scheduleData = {
                 null,
                 null,
                 null,
-                null,
                 "B3",
+                null,
                 null,
                 null
             ]
@@ -260,10 +258,10 @@ const scheduleData = {
                 "B3",
                 "B3",
                 "B3",
-                "B3",
                 "B1",
                 "B3",
-                "B3"
+                null,
+                null
             ]
         },
         {
@@ -272,10 +270,10 @@ const scheduleData = {
                 "B2",
                 "B2",
                 "B2",
-                "B2",
                 "No Bus",
                 "B2",
-                "B2"
+                null,
+                null
             ]
         },
         {
@@ -284,10 +282,10 @@ const scheduleData = {
                 "B4",
                 "B4",
                 "B4",
-                "B4",
                 "B2",
                 "B4",
-                "B4"
+                null,
+                null
             ]
         },
         {
@@ -298,8 +296,8 @@ const scheduleData = {
                 "B1",
                 "B1",
                 "B1",
-                "B1",
-                "B1"
+                null,
+                null
             ]
         },
         {
@@ -308,10 +306,10 @@ const scheduleData = {
                 "B2",
                 "B2",
                 "B2",
-                "B2",
                 "No Bus",
                 "B2",
-                "B2"
+                null,
+                null
             ]
         },
         {
@@ -320,10 +318,10 @@ const scheduleData = {
                 "B4",
                 "B4",
                 "B4",
-                "B4",
                 "B2",
                 "B4",
-                "B4"
+                null,
+                null
             ]
         },
         {
@@ -333,33 +331,21 @@ const scheduleData = {
                 null,
                 null,
                 null,
-                null,
+                "B4",
                 null,
                 null
             ]
         },
         {
-            "time": "7:00 PM",
+            "time": "7:30 PM",
             "days": [
-                "B4",
                 "B4",
                 "B4",
                 "B4",
                 "No Bus",
                 "B4",
-                "B4"
-            ]
-        },
-        {
-            "time": "8:00 AM",
-            "days": [
-                "B4",
-                "B4",
-                "B4",
-                "B4",
-                "B3",
-                "B4",
-                "B4"
+                null,
+                null
             ]
         },
         {
@@ -368,10 +354,10 @@ const scheduleData = {
                 "B4",
                 "B4",
                 "B4",
-                "B4",
                 "B2",
                 "B4",
-                "B4"
+                null,
+                null
             ]
         },
         {
@@ -380,10 +366,10 @@ const scheduleData = {
                 "B4",
                 "B4",
                 "B4",
-                "B4",
                 "B3",
                 "B4",
-                "B4"
+                null,
+                null
             ]
         }
     ],
