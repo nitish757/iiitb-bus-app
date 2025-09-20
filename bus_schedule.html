@@ -82,7 +82,7 @@
                 </table>
             </div>
              <div class="text-center mt-4 text-sm text-gray-400">
-               <!-- <p>Bus schedule data is dynamically loaded.</p> -->
+                <p>Bus schedule data is dynamically loaded.</p>
             </div>
         </div>
     </div>
@@ -120,6 +120,7 @@
         function displaySchedule(route, day) {
             scheduleBody.innerHTML = '';
             const data = scheduleData[route];
+            const dayIndex = parseInt(day, 10);
             
             const now = new Date();
             const currentTime24 = now.getHours() * 100 + now.getMinutes();
@@ -127,14 +128,14 @@
             let nextBusFound = false;
 
             data.forEach(item => {
-                const bus = item.days[day];
+                const bus = item.days[dayIndex];
 
                 if (bus) {
                     const row = document.createElement('tr');
                     let highlightClass = '';
                     const itemTime24 = timeTo24(item.time);
                     
-                    if (parseInt(day) === currentDay && !nextBusFound && itemTime24 >= currentTime24) {
+                    if (dayIndex === currentDay && !nextBusFound && itemTime24 >= currentTime24) {
                         highlightClass = 'next-bus';
                         row.id = 'next-bus-row'; // Add an ID to scroll to
                         nextBusFound = true;
