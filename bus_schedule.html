@@ -26,6 +26,15 @@
         .next-bus {
             background-color: #dcfce7; /* Light green for highlighting */
             border-left: 4px solid #22c55e; /* Solid green border */
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% {
+                background-color: #dcfce7;
+            }
+            50% {
+                background-color: #bbf7d0;
+            }
         }
     </style>
 </head>
@@ -61,9 +70,9 @@
             </div>
 
             <!-- Schedule Display Table -->
-            <div class="overflow-x-auto rounded-lg border border-gray-200">
+            <div class="overflow-x-auto rounded-lg border border-gray-200 max-h-96">
                 <table class="min-w-full divide-y divide-gray-200">
-                    <thead class="bg-gray-50">
+                    <thead class="bg-gray-50 sticky top-0">
                         <tr>
                             <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-gray-600 uppercase tracking-wider">Departure Time</th>
                             <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-gray-600 uppercase tracking-wider">Bus Number</th>
@@ -110,7 +119,6 @@
         
         function displaySchedule(route, day) {
             scheduleBody.innerHTML = '';
-            // scheduleData is now loaded from bus_data.js
             const data = scheduleData[route];
             
             const now = new Date();
@@ -128,6 +136,7 @@
                     
                     if (parseInt(day) === currentDay && !nextBusFound && itemTime24 >= currentTime24) {
                         highlightClass = 'next-bus';
+                        row.id = 'next-bus-row'; // Add an ID to scroll to
                         nextBusFound = true;
                     }
 
@@ -141,6 +150,15 @@
 
              if (scheduleBody.innerHTML === '') {
                 scheduleBody.innerHTML = `<tr><td colspan="2" class="text-center py-10 px-6 text-gray-500">No buses scheduled for this day.</td></tr>`;
+            }
+
+            // After the table is built, find the next bus and scroll to it
+            const nextBusRow = document.getElementById('next-bus-row');
+            if (nextBusRow) {
+                // Use a timeout to ensure the DOM is fully updated before scrolling
+                setTimeout(() => {
+                    nextBusRow.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }, 100);
             }
         }
 
